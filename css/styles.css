@@ -1,0 +1,202 @@
+/* ## Colors */
+
+:root {
+--cyan: hsl(179, 62%, 43%);
+--bright-yellow: hsl(71, 73%, 54%);
+--light-gray: hsl(204, 43%, 93%);
+--grayish-blue: hsl(218, 22%, 67%);
+--font-fam: 'Karla', sans-serif; 
+--font-400: 400;
+--font-700: 700;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    background-color: var(--light-gray);
+}
+
+.wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 6px 6px 0px 0px;
+    padding: 0px 0px 10px 0px;
+   
+}
+
+.join {
+    font-size: 1.15em;
+    color: var(--cyan);
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 25px 0px 25px;
+}
+
+.guarantee {
+    font-size: 0.95em;
+    color: var(--bright-yellow);
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px 25px;
+    margin: 0px 0px 5px 0px;
+}
+
+.gain {
+    padding: 0px 25px 5px 25px;
+    font-size: 0.79em;
+    color: var(--grayish-blue);
+    line-height: 1.9;
+}
+
+
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cyan);
+    color: white;
+    padding: 0px 0px 10px 0px;    
+}
+
+.monthly {
+    font-size: 1.15em;
+    padding: 10px 25px;
+}
+
+.price {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.8em;
+    font-weight: var(--font-700);
+    padding: 0px 25px 0px 25px;
+}
+
+.month {
+    display: flex;
+    align-items: center;
+    font-size: 0.5em;
+    font-weight: var(--font-400);
+    color: white);
+    padding: 0px 10px;
+}
+
+.access {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px 25px;
+    
+}
+
+.signBtn {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin: 15px 15px 15px 15px;
+    padding: 15px 0px;
+    background-color: var(--bright-yellow);
+    color: white;
+    font-weight: var(--font-700);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.15);
+    width:85%;    
+    }
+
+.container-3 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grayish-blue);
+    border-radius: 0px 0px 6px 6px;
+    padding: 10px 0px 20px 0px;    
+}
+
+.why {
+    color: white;
+    padding: 0px 25px;
+    font-size: 1.15em;
+    
+}
+
+ul {
+    color: white;
+    font-size: 0.9em;
+    line-height: 0.4;
+    padding: 0px 25px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1440px) {
+    .wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 50%; 
+    }
+    .container-1 {
+        flex-basis: 100%;
+        padding: 0px 80px 20px 20px;
+        
+    }
+    .container-2 {
+        flex-basis: 50%;
+        border-radius: 0px 0px 0px 8px;
+         
+         
+    }
+    .container-3 {
+        flex-basis: 50%;
+        border-radius: 0px 0px 8px 0px;
+        
+    }
+
+    .signBtn {
+        width:73%;
+        margin: 15px 0px 35px 0px; 
+    }
+
+    .monthly {
+        padding: 20px 50px 0px 50px;
+        font-size: 1.25em;
+    }
+
+    .access, .price {
+        padding: 0px 50px;
+    }
+
+    .price {
+        font-size: 1,95em;
+    }
+
+    .gain, .guarantee {
+        font-size: 1em;
+       
+    }
+
+    .join {
+        font-size: 1.4em;  
+    }
+    
+    .why {
+        padding: 10px 30px 0px 45px;
+        font-size: 1.25em;  
+    }
+    
+    ul {
+        
+        line-height: 0.5;
+        padding: 0px 45px;
+    }
+
+
+
+
+   
